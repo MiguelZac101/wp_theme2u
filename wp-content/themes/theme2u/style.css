@@ -9,6 +9,15 @@ Licence: GNU General Public licence or later
 Tags: html5, css3, ciudad
 */
 
-body{
-    background-color: red;
+html{
+    font-size: 1em;
+    line-height: 1.4;
+    color: #292929;
+}
+header{
+    background-color: #a00622;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
 }
