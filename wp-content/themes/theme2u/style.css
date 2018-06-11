@@ -46,6 +46,15 @@ header nav ul li a{
     width: 1100px;
     margin: 0 auto;
 }
+#primary{
+    float: left;
+    width: 720px;
+}
+#secondary{
+    float: right;
+    width: 370px;
+    margin-left: 10px;
+}
 
 
 footer nav{
