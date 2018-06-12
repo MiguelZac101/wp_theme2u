@@ -78,6 +78,26 @@ h2.noimagen{
     margin-left: 10px;
 }
 
+/**SIDERBAR**/
+.testimoniales h3{
+    color:#a00622;
+    font-size: 20px;
+}
+.testimoniales .textwidget{
+    font-size: 20px;
+    line-height: 34px;
+    color: #767676;
+    background-image: url('img/svg_comilla.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 86px;
+    font-style: italic;
+}
+.testimoniales .textwidget span{    
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
 footer nav{
     float:left;
     width: 500px;
