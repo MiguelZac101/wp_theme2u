@@ -1,13 +1,20 @@
 <?php get_header(); ?>
 
-<div id="primary" class="primary">
+<?php while (have_posts()): the_post(); ?>
 
-    <?php while(have_posts()): the_post(); ?>
-        <?php the_title(); ?>
+    <div class="destacada">
+        <?php the_post_thumbnail('destacada'); ?>
+        <h2>
+            <?php the_title(); ?>
+        </h2>        
+    </div>
+
+    <div id="primary" class="primary">
+
         <?php the_content(); ?>
-    <?php endwhile; ?>
 
-</div>
+    </div>
+<?php endwhile; ?>
 
 <?php get_sidebar(); ?>
 
