@@ -28,15 +28,18 @@ header .logo{
 }
 header nav{
     float: right;
-    width: 500px;
-    margin-top: 30px;
+    width: 470px;
+    margin-top: 40px;
 }
 header nav ul{
     list-style: none;
 }
 header nav ul li{
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
+}
+header nav ul li.current_page_item{
+    border-bottom: 2px solid white;
 }
 header nav ul li a{
     color: #FFFFFF;
