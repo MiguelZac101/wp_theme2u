@@ -20,8 +20,21 @@
 
     <div id="primary" class="primary">
 
-        desde page-blog.php
-
+        <?php 
+        $args = array(
+//            'cat' => array(6,5,4),
+            'posts_per_page' => 6,
+            'orderby' => 'date',
+            'order' => 'DESC'
+        );        
+        ?>
+        <?php $guiatoronto = new WP_Query($args); ?>
+        <?php while($guiatoronto->have_posts()):$guiatoronto->the_post();?>
+        <pre>
+            <?php var_dump($guiatoronto);?>
+        </pre>
+        <?php endwhile; wp_reset_postdata();?>
+        
     </div>
 <?php endwhile; ?>
 
