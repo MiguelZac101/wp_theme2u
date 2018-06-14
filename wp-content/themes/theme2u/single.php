@@ -13,8 +13,15 @@
         <h2 class="noimagen"><?php the_title(); ?></h2>
     <?php } ?>
 
-    <div id="primary" class="primary">        
-        <?php the_content(); ?>
+    <div id="primary" class="primary">   
+        <?php the_tags(__('Etiquetas en este post: '),', ','<br>'); ?>
+        <?php _e('Categorizado en: '); the_category(', '); ?>
+        <?php _e('Esta entrada fue escrita por: '); the_author(); ?>        
+        
+        <article id="post-<?php the_ID();?>" <?php post_class(); ?>>        
+            <?php the_content(); ?>
+            <?php comments_template(); ?>
+        </article>
     </div>
         
 <?php endwhile; ?>
