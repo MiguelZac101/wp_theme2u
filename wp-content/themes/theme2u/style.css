@@ -58,6 +58,7 @@ header nav ul li a{
 }
 .destacada{
     position: relative;
+    margin-bottom: 20px;
 }
 .destacada h2{
     position: absolute;
@@ -100,6 +101,81 @@ h2.noimagen{
     display: block;
     text-align: right;
     font-style: normal;
+}
+/*GUIA TORONTO*/
+.post-guia{
+    float: left;
+    width: 350px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.post-guia .imagen{
+    position: relative;
+}
+.post-guia .imagen .categoria{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.categoria ul{
+    list-style: none;
+}
+.categoria ul li{
+    background-color: #a00622;
+    padding: 0px 5px;
+}
+.categoria ul li a{
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    text-transform: lowercase;
+}
+.post-guia .contenido{
+    padding: 10px;
+}
+.post-guia .contenido h3{
+    margin: 0;
+    padding: 0;
+    color: #a00622;
+}
+.post-guia .contenido p{
+    color: #000;
+    font-size: 12px;
+    text-align: justify;
+}
+.post-guia .contenido a{
+    float: right;
+    background-color: #a00622;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+}
+.post-guia .info-post{
+    background-color: #ebebeb;
+    padding: 5px;
+}
+.post-guia .info-post p{
+    font-size: 10px;
+    color: #000;
+    font-weight: bold;
+}
+p.autor{
+    float: right;
+    width: 40%;
+}
+p.autor span{
+    color: #a00622;
+}
+p.fecha{
+    float: right;
+    width: 40%;
+}
+
+footer{
+    
 }
 footer nav{
     float:left;

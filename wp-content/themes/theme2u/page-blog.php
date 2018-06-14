@@ -45,10 +45,13 @@
                 <a href="<?php the_permalink();?>">
                     Leer más
                 </a>  
+                <div class="clear"></div>
             </div>
             <div class="info-post">
-                <p class="autor">Por: <?php the_author(); ?></p>
-                <p class="fecha"><?php the_date(); ?></p>
+                <p class="autor">Por: <span><?php the_author(); ?></span></p>
+                <!--<p class="fecha"><?php the_date(); ?></p>-->
+                <p class="fecha"><?php the_time(get_option('date_format')); ?></p>
+                <div class="clear"></div>
             </div>
         </div>
         <?php endwhile; wp_reset_postdata();?>
