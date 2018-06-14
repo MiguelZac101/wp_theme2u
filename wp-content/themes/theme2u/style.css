@@ -173,6 +173,22 @@ p.fecha{
     float: right;
     width: 40%;
 }
+/* Single Post*/
+.single .publicacion{
+    background-color: #ebebeb;
+    padding: 5px;
+    font-size: 12px;
+}
+.single .publicacion .columna{
+    float: left;
+    width: 33%;
+}
+.single .publicacion a,
+.single .publicacion span{
+    color: #a00622;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 footer{
     

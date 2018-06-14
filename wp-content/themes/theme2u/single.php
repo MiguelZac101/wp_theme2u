@@ -14,10 +14,18 @@
     <?php } ?>
 
     <div id="primary" class="primary">   
-        <?php the_tags(__('Etiquetas en este post: '),', ','<br>'); ?>
-        <?php _e('Categorizado en: '); the_category(', '); ?>
-        <?php _e('Esta entrada fue escrita por: '); the_author(); ?>        
-        
+        <div class="publicacion">
+            <div class="columna">
+                <?php the_tags(__('Etiquetas en este post: '),', ','<br>'); ?>
+            </div>
+            <div class="columna">
+                <?php _e('Categorizado en: '); the_category(', '); ?><br>
+            </div>
+            <div class="columna">
+                <?php _e('Escrita por: ');?><span><?php the_author(); ?></span>
+            </div>
+            <div class="clear"></div>
+        </div>
         <article id="post-<?php the_ID();?>" <?php post_class(); ?>>        
             <?php the_content(); ?>
             <?php comments_template(); ?>
