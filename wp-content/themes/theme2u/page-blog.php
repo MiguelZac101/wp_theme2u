@@ -22,7 +22,7 @@
 
         <?php 
         $args = array(
-//            'cat' => array(6,5,4),
+//            'category__in' => array(6,5,4),
             'posts_per_page' => 6,
             'orderby' => 'date',
             'order' => 'DESC'

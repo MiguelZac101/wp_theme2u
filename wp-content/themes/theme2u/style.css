@@ -189,6 +189,11 @@ p.fecha{
     text-decoration: none;
     font-weight: bold;
 }
+/*CONSEJOS*/
+h2.consejos{
+    font-size: 20px;
+    color: #a00622;
+}
 
 footer{
     
