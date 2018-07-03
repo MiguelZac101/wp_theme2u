@@ -1,3 +1,6 @@
 (function($){
-    alert("xxx");
+    $('.bxslider').bxSlider({
+       auto: true,
+       mode: 'fade'
+    });
 })(jQuery);
