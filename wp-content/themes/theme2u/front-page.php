@@ -2,6 +2,7 @@
     <div id="queVisitar">
         <?php dynamic_sidebar('front-page'); ?>
     </div>
+<div class="clear"></div>
 <div id="informacionConsejos">
     <div class="informacion">
         <?php $informacion = new WP_Query('page_id=8'); ?>
@@ -22,10 +23,14 @@
         ?>    
         <?php $consejos = new WP_Query($args);?>    
         <?php while($consejos->have_posts()): $consejos->the_post();?>
-            
-            <?php the_post_thumbnail('guia-toronto');?>
-            <h3><?php the_title();?></h3>
-            <?php the_excerpt();?>
+        
+        <div class="consejoContenido">
+            <a href="">
+                <?php the_post_thumbnail('guia-toronto');?>
+                <h3><?php the_title();?></h3>
+            </a>
+                <?php the_excerpt();?>
+        </div>
             
         <?php endwhile; wp_reset_postdata();?>
     </div>
